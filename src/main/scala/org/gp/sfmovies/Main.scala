@@ -9,8 +9,10 @@ import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
 
 object Main {
 
-	case class Movie(title: String, releaseYear: Int, locations: String, funFacts: String, productionCompany: String,
-									 distributor: String, director: String, writer: String, actor1: String, actor2: String, actor3: String)
+	case class Movie(title: String, releaseYear: Int, locations: String, 
+			 funFacts: String, productionCompany: String,
+			 distributor: String, director: String, writer: String, 
+			 actor1: String, actor2: String, actor3: String)
 
 
 	val schema = StructType(Array(
